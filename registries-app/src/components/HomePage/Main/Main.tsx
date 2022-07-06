@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-import image from '../../assets/office-work.png';
+import image from '../../../assets/office-work.png';
 
 export default function Main() {
   return (

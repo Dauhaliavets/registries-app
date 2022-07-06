@@ -45,7 +45,7 @@
   display: flex;
 }
 .description__form-input {
-  background: url('../../assets/search-icon.svg') #ffffff 10px 16px / 24px no-repeat; 
+  background: url('../../../assets/search-icon.svg') #ffffff 10px 16px / 24px no-repeat; 
   padding: 14px 10px 14px 50px;
   width: 330px;
   height: 56px;
@@ -73,4 +73,8 @@
   line-height: 25px;
   letter-spacing: 0.01em;
   color: #FFFFFF;
+}
+.description__form-button:hover {
+  background-color: #01B8D4;
+  cursor: pointer;
 }

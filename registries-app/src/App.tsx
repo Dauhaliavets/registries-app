@@ -1,19 +1,19 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import News from './components/News/News';
-import Registry from './components/Registry/Registry';
+import Authorization from './components/Authorization/Authorization';
+import Layout from './components/Layout/Layout';
+import HomePage from './components/HomePage/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Registry />
-      <News />
-      <Footer />
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path='auth' element={<Authorization />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

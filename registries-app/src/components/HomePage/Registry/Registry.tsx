@@ -2,17 +2,8 @@ import React from 'react';
 import './Registry.css';
 import RegistryTable from './RegistryTable/RegistryTable';
 
-interface Registry {
-  id: number;
-  name: string;
-  code: string;
-  classSW: string;
-  dataReg: string;
-  link: string;
-}
-
 export default function Registry() {
-  const dataRegistry: Registry[] = [
+  const dataRegistry = [
     {
       id: 1,
       name: 'Система управления базами данных «Ред База Данных»',

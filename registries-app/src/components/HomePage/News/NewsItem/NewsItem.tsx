@@ -1,10 +1,10 @@
 import React from 'react';
 import './NewsItem.css';
-import imageWorks from '../../../assets/news/news-engin-works.png';
-import imageAttent from '../../../assets/news/news-attention.png';
-import imageLicens from '../../../assets/news/news-license.png';
-import imageTest from '../../../assets/news/news-test.png';
-import imageUpgr from '../../../assets/news/news-upgrade.png';
+import imageWorks from '../../../../assets/news/news-engin-works.png';
+import imageAttent from '../../../../assets/news/news-attention.png';
+import imageLicens from '../../../../assets/news/news-license.png';
+import imageTest from '../../../../assets/news/news-test.png';
+import imageUpgr from '../../../../assets/news/news-upgrade.png';
 
 interface ItemNews {
   id: number;
