@@ -1,0 +1,42 @@
+.news__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news__item-image {
+  border-radius: 5px;
+  display: flex;
+}
+
+.news__item-body {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.item__body-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #231F20;
+}
+.item__body-date {
+  padding-left: 34px;
+  background: url('../../../assets/notes-calendar-small-size.svg') #f9f9fb 0px / 24px no-repeat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A8AAAE;
+}
+.item__body-content {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #676A71;
+}
