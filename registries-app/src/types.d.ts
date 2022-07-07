@@ -13,6 +13,12 @@ interface Registry {
   classSW: string;
   dataReg: string;
   link: string;
+  [index: string]: number | string;
+}
+
+interface SortConfig {
+  key: string;
+  direction: string;
 }
 
 interface User {
@@ -32,4 +38,4 @@ interface AuthState {
   currentUser: User | null;
 }
 
-export { ItemNews, Registry, User, AuthState,};
+export { ItemNews, Registry, SortConfig, User, AuthState };
