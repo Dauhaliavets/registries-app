@@ -9,6 +9,7 @@
 
 .authorization__link-to-back {
   position: absolute;
+  padding-left: 40px;
   left: 0;
   top: 40px;
   font-style: normal;
@@ -16,6 +17,8 @@
   font-size: 18px;
   line-height: 25px;
   color: #676a71;
+  text-decoration: none;
+  background: url('../../assets/arrow-left.svg') 0 center no-repeat;
 }
 .authorization__link-to-back:hover {
   cursor: pointer;
@@ -136,6 +139,7 @@
   line-height: 22px;
   text-decoration: underline;
   color: #009cb4;
+  align-self: center;
 }
 .authorization__form-repair:hover {
   cursor: pointer;

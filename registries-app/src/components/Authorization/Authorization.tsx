@@ -43,7 +43,7 @@ export default function Authorization() {
       <div className='container'>
         <div className='authorization__container'>
           <NavLink to={'/'} className='authorization__link-to-back'>
-            {'<- Главная'}
+            Главная
           </NavLink>
           <div className='authorization__header'>
             <h2 className='authorization__title title'>Авторизация</h2>
