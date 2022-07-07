@@ -21,6 +21,7 @@ const dbUsers = [
     phone: '+375221113344',
     password: '123123',
     isAuth: false,
+    photo: 'photo',
   },
 ];
 

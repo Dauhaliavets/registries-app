@@ -23,6 +23,7 @@ interface User {
   country?: string;
   city?: string;
   phone?: string;
+  photo?: string;
   password: string;
 }
 
