@@ -41,7 +41,14 @@ interface AuthState {
 type FormValues = {
   firstName: string;
   password: string;
-  remember: boolean;
+  remember?: boolean;
+  lastName?: string;
+  patronymic?: string;
+  country?: string;
+  city?: string;
+  phone?: string;
+  photo?: string;
+  repeatPassword?: string;
 };
 
 export { ItemNews, Registry, SortConfig, User, AuthState, FormValues };

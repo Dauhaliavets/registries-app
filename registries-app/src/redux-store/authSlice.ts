@@ -15,10 +15,13 @@ export const authSlice = createSlice({
       state.currentUser = payload.payload;
       state.isAuth = true;
     },
+    setChangedUser: (state, payload) => {
+      state.currentUser = payload.payload;
+    }
   },
 });
 
-export const { setLogIn } = authSlice.actions;
+export const { setLogIn, setChangedUser } = authSlice.actions;
 
 export const authSelector = (state: RootState) => state.auth;
 
