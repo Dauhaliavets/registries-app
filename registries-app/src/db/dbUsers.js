@@ -7,7 +7,7 @@ const dbUsers = [
   },
   {
     id: 1,
-    firstName: 'Admin',
+    firstName: 'admin',
     password: 'admin',
     isAuth: false,
   },
@@ -23,3 +23,5 @@ const dbUsers = [
     isAuth: false,
   },
 ];
+
+export { dbUsers };

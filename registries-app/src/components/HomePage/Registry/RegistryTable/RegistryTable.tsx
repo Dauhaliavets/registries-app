@@ -1,16 +1,8 @@
 import React from 'react';
+import { Registry } from '../../../../types';
 import './RegistryTable.css';
 
-interface Registry {
-  id: number;
-  name: string;
-  code: string;
-  classSW: string;
-  dataReg: string;
-  link: string;
-}
-
-export default function RegistryTable(props: { data: Registry[] }) {
+export default function RegistryTable(props: {data: Registry[]}) {
   const { data } = props;
 
   return (

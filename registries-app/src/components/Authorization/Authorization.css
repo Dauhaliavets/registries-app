@@ -18,9 +18,116 @@
   color: #676a71;
 }
 .authorization__link-to-back:hover {
-  cursor: pointer; 
-  color: #4D4D4F;
+  cursor: pointer;
+  color: #4d4d4f;
 }
+/* Form */
+.authorization__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+  position: relative;
+}
+.form__field-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #676a71;
+}
+.label-error {
+  color: #E0371F;
+}
+.form__field-input {
+  padding: 17px 18px;
+  width: 430px;
+  height: 56px;
+  background-color: #f6f6f9;
+  border-radius: 5px;
+  border: 1px solid #f6f6f9;
+  outline: none;
+}
+.input-success {
+  border: 1px solid #00B347;
+}
+.input-error {
+  border: 1px solid #E0371F;
+}
+.form__field-input:active,
+.form__field-input:focus,
+.form__field-input:visited {
+  border: 1px solid #009cb4;
+}
+.form__field-input:active + .form__field-label,
+.form__field-input:focus + .form__field-label,
+.form__field-input:visited + .form__field-label {
+  color: #009cb4;
+}
+.form__field-input::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #c6c6c6;
+}
+.form__field-error {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e0371f;
+}
+.form__field-success {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url('../../assets/check-circle.svg') center no-repeat;
+  position: absolute;
+  top: 40px;
+  right: -34px;
+}
+.field-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.form__field-checkbox {
+  width: 16px;
+  height: 16px;
+  background: #33a6ff;
+  border-radius: 2px;
+}
+.form__button {
+  width: 430px;
+  height: 56px;
+  background-color: #009cb4;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: none;
+}
+.form__button:hover {
+  background-color: #01b8d5;
+  cursor: pointer;
+}
+.form__button:active {
+  background-color: #01bedb;
+  box-shadow: 0px 8px 40px rgba(1, 184, 212, 0.15);
+}
+.form__button:disabled {
+  background-color: #007183;
+  cursor: auto;
+}
+/* Form */
 
 .authorization__form-repair {
   font-style: normal;

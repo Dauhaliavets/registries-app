@@ -1,50 +1,9 @@
 import React from 'react';
 import './Registry.css';
 import RegistryTable from './RegistryTable/RegistryTable';
+import { dataRegistry } from '../../../db/dbRegistry';
 
 export default function Registry() {
-  const dataRegistry = [
-    {
-      id: 1,
-      name: 'Система управления базами данных «Ред База Данных»',
-      code: '02.09',
-      classSW: 'Системы управления базами данных',
-      dataReg: '29.01.2016',
-      link: 'Ссылка',
-    },
-    {
-      id: 2,
-      name: '1С:Школа. Информатика, 11 класс',
-      code: '04.11',
-      classSW: 'Системы управления процессами организации',
-      dataReg: '29.01.2016',
-      link: 'Ссылка',
-    },
-    {
-      id: 3,
-      name: '1С:Школа. Информатика, 5-6 класс',
-      code: '04.11',
-      classSW: 'Информационные системы для решения специфических отраслевых задач',
-      dataReg: '29.01.2016',
-      link: 'Ссылка',
-    },
-    {
-      id: 4,
-      name: '1С:Комплексная автоматизация 8',
-      code: '04.11',
-      classSW: 'Системы управления процессами организации',
-      dataReg: '20.02.2016',
-      link: 'Ссылка',
-    },
-    {
-      id: 5,
-      name: "Электронный периодический справочник 'Система ГАРАНТ'",
-      code: '04.15',
-      classSW: 'Прикладное программное обеспечение общего назначения',
-      dataReg: '20.02.2016',
-      link: 'Ссылка',
-    },
-  ];
 
   return (
     <section className='registry'>
