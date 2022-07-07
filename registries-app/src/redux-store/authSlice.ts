@@ -15,13 +15,17 @@ export const authSlice = createSlice({
       state.currentUser = payload.payload;
       state.isAuth = true;
     },
+    setLogOut: (state) => {
+      state.currentUser = null;
+      state.isAuth = false;
+    },
     setChangedUser: (state, payload) => {
       state.currentUser = payload.payload;
     }
   },
 });
 
-export const { setLogIn, setChangedUser } = authSlice.actions;
+export const { setLogIn, setLogOut, setChangedUser } = authSlice.actions;
 
 export const authSelector = (state: RootState) => state.auth;
 

@@ -1,20 +1,27 @@
 import React from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-import { authSelector, setChangedUser } from '../../redux-store/authSlice';
+import { authSelector, setChangedUser, setLogOut } from '../../redux-store/authSlice';
 import { FormValues } from '../../types';
 import './Profile.css';
 import userPhotoDefault from '../../assets/icon-user-default.png';
 import userPhoto from '../../assets/icon-user.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function Profile() {
   const { currentUser } = useSelector(authSelector);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const { register, handleSubmit } = useForm<FormValues>({ mode: 'onSubmit', defaultValues: { ...currentUser } });
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     dispatch(setChangedUser(data));
+  };
+
+  const logOut = () => {
+    dispatch(setLogOut());
+    navigate('/');
   };
 
   return (
@@ -33,7 +40,9 @@ export default function Profile() {
                 <li className='nav__list-item item-meta'>Метаданные</li>
                 <li className='nav__list-item item-secur'>Безопасность</li>
                 <li className='nav__list-item item-download'>Мои загрузки</li>
-                <li className='nav__list-item item-exit'>Выход</li>
+                <li className='nav__list-item item-exit' onClick={logOut}>
+                  Выход
+                </li>
               </ul>
             </nav>
             <div className='body__content'>
