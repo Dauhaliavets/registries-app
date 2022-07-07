@@ -5,14 +5,7 @@ import imageAttent from '../../../../assets/news/news-attention.png';
 import imageLicens from '../../../../assets/news/news-license.png';
 import imageTest from '../../../../assets/news/news-test.png';
 import imageUpgr from '../../../../assets/news/news-upgrade.png';
-
-interface ItemNews {
-  id: number;
-  title: string;
-  date: string;
-  text: string;
-  imageSrc: string;
-}
+import { ItemNews } from '../../../../types';
 
 export default function NewsItem(props: { item: ItemNews }) {
   const { item } = props;
