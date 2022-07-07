@@ -88,7 +88,7 @@ export default function Profile() {
                   </div>
                 </div>
                 <div className='divide-line'></div>
-                <input className='form__button' type='submit' value='Сохранить' />
+                <input className='form__button form__user-button' type='submit' value='Сохранить' />
               </form>
             </div>
           </div>

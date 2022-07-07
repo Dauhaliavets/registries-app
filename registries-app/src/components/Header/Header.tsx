@@ -24,7 +24,9 @@ export default function Header() {
       <div className='container'>
         <div className='header__container'>
           <div className='header__logo'>
-            <img src={logo} alt='logo' />
+            <NavLink to={'/'}>
+              <img src={logo} alt='logo' />
+            </NavLink>
           </div>
           <div className='header__search'>
             <input className='input__search' type='text' name='' id='searh' placeholder='Поиск' />
