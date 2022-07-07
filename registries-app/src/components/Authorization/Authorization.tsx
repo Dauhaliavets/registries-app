@@ -5,12 +5,7 @@ import { useForm, SubmitHandler, SubmitErrorHandler } from 'react-hook-form';
 import { dbUsers } from '../../db/dbUsers';
 import { useDispatch } from 'react-redux';
 import { setLogIn } from '../../redux-store/authSlice';
-
-type FormValues = {
-  firstName: string;
-  password: string;
-  remember: boolean;
-};
+import { FormValues } from '../../types';
 
 export default function Authorization() {
   const dispatch = useDispatch();

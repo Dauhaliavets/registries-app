@@ -38,4 +38,10 @@ interface AuthState {
   currentUser: User | null;
 }
 
-export { ItemNews, Registry, SortConfig, User, AuthState };
+type FormValues = {
+  firstName: string;
+  password: string;
+  remember: boolean;
+};
+
+export { ItemNews, Registry, SortConfig, User, AuthState, FormValues };
