@@ -6,6 +6,14 @@ interface ItemNews {
   imageSrc: string;
 }
 
+interface ItemDoc {
+  id: number;
+  category: string;
+  name: string;
+  date: string;
+  content: string;
+}
+
 interface Registry {
   id: number;
   name: string;
@@ -51,4 +59,4 @@ type FormValues = {
   repeatPassword?: string;
 };
 
-export { ItemNews, Registry, SortConfig, User, AuthState, FormValues };
+export { ItemNews, ItemDoc, Registry, SortConfig, User, AuthState, FormValues };
