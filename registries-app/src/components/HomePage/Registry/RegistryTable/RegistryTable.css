@@ -1,0 +1,76 @@
+thead tr {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  border-top: 1px solid #ededf4;
+  border-bottom: 1px solid #ededf4;
+  padding: 20px 0px;
+}
+
+thead tr th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #009cb4;
+  text-align: left;
+}
+thead tr th .sort-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #009cb4;
+  text-align: left;
+  padding-left: 34px;
+  background: url('../../../../assets/arrow-top-bottom.svg') 0 center no-repeat;
+  border: none;
+  background-color: transparent;
+}
+thead tr th .sort-button:hover {
+  cursor: pointer;
+}
+
+tbody tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  border-bottom: 1px solid #ededf4;
+  padding: 20px 0px;
+}
+tbody tr td {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4d4d4f;
+}
+
+tbody tr td:nth-child(1) {
+  padding-left: 34px;
+  width: 165px;
+}
+tbody tr td:nth-child(2) {
+  padding-left: 34px;
+  width: 252px;
+}
+tbody tr td:nth-child(3) {
+  width: 57px;
+}
+tbody tr td:nth-child(4) {
+  width: 200px;
+}
+tbody tr td:nth-child(5) {
+  width: 92px;
+}
+tbody tr td:nth-child(6) {
+  width: 77px;
+}
+tbody tr td:nth-child(6) a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #009cb4;
+}

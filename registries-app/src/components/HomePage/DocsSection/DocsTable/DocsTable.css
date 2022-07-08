@@ -1,0 +1,48 @@
+.table__docs thead tr {
+  gap: 80px;
+}
+.table__docs thead tr th:nth-child(1) {
+  width: 170px;
+}
+.table__docs thead tr th:nth-child(2) {
+  width: 390px;
+}
+.table__docs thead tr th:nth-child(3) {
+  width: 70px;
+}
+.table__docs thead tr th:nth-child(5) {
+  padding-left: 34px;
+  width: 165px;
+  background: url('../../../../assets/paper-docs.svg') 0 center no-repeat;
+}
+
+.table__docs tbody tr {
+  gap: 80px;
+}
+.table__docs tbody tr td {
+  padding: 0;
+}
+.table__docs tbody tr td:nth-child(2) {
+  width: 390px;
+}
+.table__docs tbody tr td:nth-child(3) {
+  width: 70px;
+}
+.table__docs tbody tr td:nth-child(4) {
+  width: 60px;
+}
+.table__docs tbody tr td:nth-child(5) {
+  padding-left: 34px;
+  padding-right: 34px;
+  background: url('../../../../assets/download-docs.svg') 0 center no-repeat;
+  width: 165px;
+  height: 44px;
+}
+.table__docs tbody tr td:nth-child(5) a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #009cb4;
+  text-decoration: none;
+}

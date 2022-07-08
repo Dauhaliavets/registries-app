@@ -1,0 +1,12 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #231F20;
+}
